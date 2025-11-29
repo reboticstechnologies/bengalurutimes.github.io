@@ -1,1 +1,88 @@
-<html><body>Home</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bengaluru Times – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo">BENGALURU TIMES</div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="metro.html">Metro</a>
+        <a href="buses.html">BMTC &amp; KSRTC</a>
+        <a href="suburban.html">Suburban</a>
+        <a href="ir-suburban.html">IR Suburban Trains</a>
+        <a href="ir-interstate.html">IR Interstate Trains</a>
+        <a href="flights.html">Flights</a>
+        <a href="properties.html">Sell &amp; Rental</a>
+        <a href="company.html">Company Details</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <div class="pill">Bengaluru • Transport • Properties</div>
+      <h1 class="hero-title">One-stop hub for Bengaluru travel &amp; real estate.</h1>
+      <p class="hero-subtitle">
+        Metro, BMTC &amp; KSRTC buses, Indian Railways suburban &amp; interstate trains,
+        flights and property listings – all in one place.
+      </p>
+      <div class="hero-buttons">
+        <a href="ir-suburban.html" class="btn btn-primary">Open Suburban Train Timetable</a>
+        <a href="flights.html" class="btn btn-outline">Flight information</a>
+      </div>
+
+      <!-- 🔔 Shining clickable icon linking to IR Suburban timetable page -->
+      <a href="ir-suburban.html" class="timetable-icon-link" title="View BLRR ↔ AEK Suburban Timetable">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24"
+             class="timetable-icon-svg"
+             aria-hidden="true">
+          <path fill="currentColor"
+            d="M12 2C9.24 2 7 4.24 7 7v4.5C6.17 11.18 5.13 11 4 11v2
+               c1.45 0 2.67.63 3.39 1.61C8.54 15.94 9.68 17 12 17s3.46-1.06 4.61-2.39C17.33 13.63 18.55 13 20 13v-2
+               c-1.13 0-2.17.18-3 .5V7c0-2.76-2.24-5-5-5zm0 2c1.66 0 3 1.34 3 3v5c0 1.66-1.34 3-3 3s-3-1.34-3-3V7
+               c0-1.66 1.34-3 3-3zm-4 15a2 2 0 1 0 0 4h8a2 2 0 1 0 0-4H8z"/>
+        </svg>
+        <span>BLRR ↔ AEK Suburban Timetable</span>
+      </a>
+
+      <p style="font-size:0.9rem;color:var(--muted);margin-top:10px;">
+        Live operational data (exact timings, delays, maps) should be confirmed via official apps/websites.
+      </p>
+    </div>
+
+    <div>
+      <!-- Example Bengaluru map -->
+      <iframe
+        class="map-embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.152774007774!2d77.58064331534448!3d12.962779518610374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167e4b8a5a4f%3A0x2f93e3d79e927651!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000">
+      </iframe>
+      <p class="note">
+        Map: Bengaluru city area. Replace with your own custom Google Maps embed if needed.
+      </p>
+    </div>
+  </header>
+
+  <footer>
+    © <span id="year"></span> BengaluruTimes.co.in · All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

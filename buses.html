@@ -1,1 +1,143 @@
-<html><body>BMTC & KSRTC</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BMTC &amp; KSRTC – Bengaluru Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">BT</div>
+        <div class="logo">BENGALURU TIMES</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="metro.html">Metro</a>
+        <a href="buses.html" class="active">BMTC &amp; KSRTC</a>
+        <a href="suburban.html">Suburban</a>
+        <a href="ir-suburban.html">IR Suburban Trains</a>
+        <a href="ir-interstate.html">IR Interstate Trains</a>
+        <a href="flights.html">Flights</a>
+        <a href="properties.html">Sell &amp; Rental</a>
+        <a href="company.html">Company Details</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <h2>BMTC &amp; KSRTC Buses</h2>
+    <p class="lead">
+      City and state-run buses connecting Bengaluru with neighbourhoods and
+      other cities across Karnataka.
+    </p>
+
+    <div class="two-col">
+      <div>
+        <div class="card">
+          <h3>BMTC – City Buses</h3>
+          <p style="font-size:0.9rem;color:var(--muted);">
+            These are sample routes. Replace or expand with real route data
+            from BMTC website or API.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Route No</th>
+                <th>From → To</th>
+                <th>Major Stops</th>
+                <th>Approx Frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>500D</td>
+                <td>Hebbal → Electronics City</td>
+                <td>Nagavara, Silk Board</td>
+                <td>10–15 mins (peak)</td>
+              </tr>
+              <tr>
+                <td>356C</td>
+                <td>Majestic → Chandapura</td>
+                <td>BTM, Silk Board, Electronic City</td>
+                <td>15–20 mins</td>
+              </tr>
+              <tr>
+                <td>KIAS-5</td>
+                <td>Hebbal → Airport</td>
+                <td>Mekhri Circle, Airport Road</td>
+                <td>30–45 mins</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">
+            TODO: link to dynamic BMTC route search / API for accurate timings.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>KSRTC – Intercity &amp; Long-distance</h3>
+          <p style="font-size:0.9rem;color:var(--muted);">
+            Example services originating from Bengaluru. Add more services or
+            link to KSRTC booking.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>From → To</th>
+                <th>Type</th>
+                <th>Typical Departure Slots</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>KA-01-EXP</td>
+                <td>Bengaluru → Mysuru</td>
+                <td>Express / Rajahamsa</td>
+                <td>Early morning to late night</td>
+              </tr>
+              <tr>
+                <td>KA-02-VOLVO</td>
+                <td>Bengaluru → Mangaluru</td>
+                <td>Airavat / Volvo</td>
+                <td>Evening / Night</td>
+              </tr>
+              <tr>
+                <td>KA-03-DELUXE</td>
+                <td>Bengaluru → Hyderabad</td>
+                <td>Airavat Club Class</td>
+                <td>Multiple night departures</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">
+            TODO: integrate with KSRTC official schedule or reservation page.
+          </p>
+        </div>
+        <iframe
+          class="map-embed"
+          loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.137!2d77.5713!3d12.9639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167f5a9f5e71%3A0x7fe3a!2sKempegowda%20Bus%20Station!5e0!3m2!1sen!2sin!4v1700000000001">
+        </iframe>
+        <p class="note">
+          Map: Kempegowda Bus Station (Majestic), major BMTC &amp; KSRTC hub.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BengaluruTimes.co.in
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

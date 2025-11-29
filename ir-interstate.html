@@ -1,1 +1,110 @@
-<html><body>IR Interstate</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IR Interstate Trains – Bengaluru Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">BT</div>
+        <div class="logo">BENGALURU TIMES</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="metro.html">Metro</a>
+        <a href="buses.html">BMTC &amp; KSRTC</a>
+        <a href="suburban.html">Suburban</a>
+        <a href="ir-suburban.html">IR Suburban Trains</a>
+        <a href="ir-interstate.html" class="active">IR Interstate Trains</a>
+        <a href="flights.html">Flights</a>
+        <a href="properties.html">Sell &amp; Rental</a>
+        <a href="company.html">Company Details</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <h2>Indian Railways – Interstate Trains from Bengaluru</h2>
+    <p class="lead">
+      There are hundreds of long-distance trains connecting Bengaluru with the
+      rest of India. Below is a framework and a few major examples. The complete
+      list should be populated from official railway data or an API.
+    </p>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Major Interstate Connections (Examples)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Train No</th>
+              <th>Name</th>
+              <th>From Bengaluru Station</th>
+              <th>Key Destination</th>
+              <th>Typical Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12627/12628</td>
+              <td>Karnataka Express</td>
+              <td>KSR Bengaluru</td>
+              <td>New Delhi</td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <td>16526/16525</td>
+              <td>Kanyakumari Express</td>
+              <td>KSR Bengaluru</td>
+              <td>Kanyakumari</td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <td>12213/12214</td>
+              <td>Duronto Express</td>
+              <td>SMVT Bengaluru</td>
+              <td>New Delhi</td>
+              <td>Bi-weekly</td>
+            </tr>
+            <tr>
+              <td>16579/16580</td>
+              <td>Yesvantpur–Shivamogga Express</td>
+              <td>Yesvantpur</td>
+              <td>Shivamogga</td>
+              <td>Daily</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">
+          TODO: connect this section to a live railway API or manually curated
+          tables covering all trains from Bengaluru to each state.
+        </p>
+      </div>
+      <div>
+        <iframe
+          class="map-embed"
+          loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.077!2d77.5708!3d12.9779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167f4b4907dd%3A0xa5c63!2sKSR%20Bengaluru!5e0!3m2!1sen!2sin!4v1700000000002">
+        </iframe>
+        <p class="note">
+          Map: KSR Bengaluru railway station, main hub for many interstate trains.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BengaluruTimes.co.in
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,1 +1,72 @@
-<html><body>Metro</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Namma Metro – Bengaluru Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">BT</div>
+        <div class="logo">BENGALURU TIMES</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="metro.html" class="active">Metro</a>
+        <a href="buses.html">BMTC &amp; KSRTC</a>
+        <a href="suburban.html">Suburban</a>
+        <a href="ir-suburban.html">IR Suburban Trains</a>
+        <a href="ir-interstate.html">IR Interstate Trains</a>
+        <a href="flights.html">Flights</a>
+        <a href="properties.html">Sell &amp; Rental</a>
+        <a href="company.html">Company Details</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <h2>Namma Metro – Bengaluru</h2>
+    <p class="lead">
+      Overview of current and upcoming Namma Metro lines, interchange
+      stations and connectivity to major hubs.
+    </p>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Metro Network Snapshot</h3>
+        <ul style="margin:0 0 8px 18px;font-size:0.9rem;color:var(--muted);">
+          <li>Green Line – Nagasandra to Silk Institute</li>
+          <li>Purple Line – Challaghatta to Whitefield (Kadugodi)</li>
+          <li>Interchanges – Majestic (Kempegowda), MG Road, KRPuram etc.</li>
+          <li>Airport Line &amp; other corridors – proposed / under development.</li>
+        </ul>
+        <p class="note">
+          TODO: add latest map image or link to official BMRCL PDF.
+        </p>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Metro Map (Embed / Image)</h3>
+          <p class="note">
+            Insert a high-resolution metro map image or embed from official
+            Namma Metro resources here.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BengaluruTimes.co.in
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

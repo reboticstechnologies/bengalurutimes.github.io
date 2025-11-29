@@ -1,1 +1,67 @@
-<html><body>Company</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Company Details – Bengaluru Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">BT</div>
+        <div class="logo">BENGALURU TIMES</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="metro.html">Metro</a>
+        <a href="buses.html">BMTC &amp; KSRTC</a>
+        <a href="suburban.html">Suburban</a>
+        <a href="ir-suburban.html">IR Suburban Trains</a>
+        <a href="ir-interstate.html">IR Interstate Trains</a>
+        <a href="flights.html">Flights</a>
+        <a href="properties.html">Sell &amp; Rental</a>
+        <a href="company.html" class="active">Company Details</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <h2>Company Details</h2>
+    <p class="lead">
+      Basic information about the entity running BengaluruTimes.co.in.
+      Replace the placeholder content with your real registration details.
+    </p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Legal Entity</h3>
+        <p><strong>Name:</strong> Bengaluru Times Digital Media (Example)</p>
+        <p><strong>Type:</strong> Proprietorship / LLP / Pvt Ltd (update)</p>
+        <p><strong>Registered Address:</strong> [Your address]</p>
+      </div>
+      <div class="card">
+        <h3>Contact &amp; Support</h3>
+        <p><strong>Email:</strong> support@bengalurutimes.co.in</p>
+        <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+        <p><strong>Working Hours:</strong> 10:00 – 18:00 IST (Mon–Sat)</p>
+      </div>
+      <div class="card">
+        <h3>Policies</h3>
+        <p>Include Privacy Policy, Terms of Use, Content Disclaimer and
+           Advertisement Policy for transparency.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BengaluruTimes.co.in
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

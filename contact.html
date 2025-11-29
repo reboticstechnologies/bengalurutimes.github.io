@@ -1,1 +1,88 @@
-<html><body>Contact</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us – Bengaluru Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">BT</div>
+        <div class="logo">BENGALURU TIMES</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="metro.html">Metro</a>
+        <a href="buses.html">BMTC &amp; KSRTC</a>
+        <a href="suburban.html">Suburban</a>
+        <a href="ir-suburban.html">IR Suburban Trains</a>
+        <a href="ir-interstate.html">IR Interstate Trains</a>
+        <a href="flights.html">Flights</a>
+        <a href="properties.html">Sell &amp; Rental</a>
+        <a href="company.html">Company Details</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <h2>Contact Us</h2>
+    <p class="lead">
+      Reach out for transport feedback, property listings, partnerships or
+      media enquiries.
+    </p>
+
+    <div class="two-col">
+      <div>
+        <form>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" />
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option>General query</option>
+              <option>Transport information</option>
+              <option>Property listing</option>
+              <option>Advertising / Partnership</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Office Location (Example)</h3>
+          <p>Near Silk Board Junction, Bengaluru, Karnataka, India.</p>
+        </div>
+        <iframe
+          class="map-embed"
+          loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.223!2d77.6202!3d12.9565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d65fc9%3A0x293!2sSilk%20Board!5e0!3m2!1sen!2sin!4v1700000000004">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BengaluruTimes.co.in
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
